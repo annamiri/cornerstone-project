@@ -17,7 +17,7 @@ D_001 -> scenario C
 The file helper_functions contains easy, self-written functions to use the prediction methods more conveniently.
 
 # Remarks on methods
-To approximate a Bayesian neural network I use two methods, the Monte Carlo Dropout and Variational Inference. For background on the Monte Carlo Dropout I recommend this blogpost by Yarin Gal http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html. Variationl Inference is described in many books, I particularly liked the definition and explanation by Jordan et al. given in the book "Pattern Recognition and Machine Learning". 
+To approximate a Bayesian neural network I use two methods, the Monte Carlo Dropout and Variational Inference. For background on the Monte Carlo Dropout I recommend this blogpost by Yarin Gal http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html. Variationl Inference is described in many books, I particularly liked the definition and explanation in the book "Pattern Recognition and Machine Learning" by Christopher M. Bishop. 
 
 To get the methods, function etc. right I relied on the book written by Oliver Dürr, Beate Sick and Elvis Morina which is called Probabilistic Deep Learning with Python.
 
