@@ -23,8 +23,11 @@ To get the methods, function etc. right I relied on the book written by Oliver D
 
 # Remarks on code and packages
 For the Monte Carlo Dropout method, TensorFlow 1 was used. To leave the learning phase on during prediction a special predict function was created in all of the scripts for the Monte Carlo dropout. 
+
 For the Variational Inference TensorFlow 2 and TensorFlow Probability was used. To use TensorFlow 2 properly for my purposes, i,e. to simulate Bayesian neural networks and get varying results when predicting, the eager execution has to be disabled.
+
 The mentioned helper functions were used in the notebooks starting with D to evaluate the different approximation and prediction methods in a more convenient way.
+
 All the other user packages are standard packages used for data manipulation and plotting.
 The notebooks can all be executed, the data is fetched from the internet via Keras. Since I stored and then reused all my models, the reader might want to be cautious of all the load and store statements in the script since this might not be wanted. However, you can easily ignore these steps.
 When saving and loading the models it depends whether they use the Monte Carlo Dropout or the Variational Inference method. For the first one, the standard functions for saving and loading a model can be used. For the latter created with the TensorFlow Probability package, only the weights can be loaded again and therefore when reusing a model the user needs to define the model again and then load the weights. The reader can see these different steps in the respective notebooks.
